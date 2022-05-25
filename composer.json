@@ -1,0 +1,19 @@
+{
+    "name": "jsbhudev/faq",
+    "description": "Get List Of FAQ Api",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jasmin Shukal",
+            "email": "mr.jasmin.shukal@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "jsbhudev\\faq": "src/"
+        }
+    }
+}
