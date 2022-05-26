@@ -20,12 +20,12 @@ class ContactServiceProvider extends ServiceProvider
     {
         Route::group($this->routeConfiguration(), function () {
             $this->loadRoutesFrom(__DIR__.'/routes/web.php');
-            $this->loadRoutesFrom(__DIR__.'/routes/api.php');
-            $this->mergeConfigFrom(__DIR__.'/config/faq.php', 'faq');
-            $this->publishes([
-                __DIR__.'/config/faq.php' => config_path('faq.php'),
-              ], 'config');
         });
+        $this->loadRoutesFrom(__DIR__.'/routes/api.php');
+        $this->mergeConfigFrom(__DIR__.'/config/faq.php', 'faq');
+        $this->publishes([
+            __DIR__.'/config/faq.php' => config_path('faq.php'),
+          ], 'config');
     }
 
     protected function routeConfiguration()
