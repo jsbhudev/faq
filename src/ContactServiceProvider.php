@@ -23,7 +23,7 @@ class ContactServiceProvider extends ServiceProvider
             $this->loadRoutesFrom(__DIR__.'/routes/api.php');
             $this->mergeConfigFrom(__DIR__.'/config/faq.php', 'faq');
             $this->publishes([
-                __DIR__.'/config/faq.php' => config_path('jsbhudev.php'),
+                __DIR__.'/config/faq.php' => config_path('faq.php'),
               ], 'config');
         });
     }
